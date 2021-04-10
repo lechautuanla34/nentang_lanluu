@@ -1,0 +1,65 @@
+package demo.basic;
+
+import java.util.Scanner;
+
+public class baitap02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int client_Number ;
+		String client_Language;
+		String result ="";
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Nhap 1 so tu 1-7");
+		client_Number = scanner.nextInt();
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Nhap vi neu ban chon tieng viet - en neu ban chon tieng anh" );
+		client_Language = sc.nextLine();
+		
+		switch (client_Number) {
+		
+		case 1: 	
+			if (client_Language.equals("vi")) result = "Thu Hai";
+			else if (client_Language.equals("en")) result ="Monday";
+			else result="Không hợp lệ: Xin nhập vi hoặc en";
+				break;
+		case 2:
+			if (client_Language.equals("vi")) result = "Thu Ba";
+			else if (client_Language.equals("en")) result ="Tuesday";
+			else result="Không hợp lệ: Xin nhập vi hoặc en";
+				break;
+		case 3:
+			if (client_Language.equals("vi")) result = "Thu Hai";
+			else if (client_Language.equals("en")) result ="Wednesday";
+			else result="Không hợp lệ: Xin nhập vi hoặc en";
+				break;
+		case 4:
+			if (client_Language.equals("vi")) result = "Thu Năm";
+			else if (client_Language.equals("en")) result ="Thursday";
+			else result="Không hợp lệ: Xin nhập vi hoặc en";
+				break;
+		case 5:
+			if (client_Language.equals("vi")) result = "Thứ Sáu";
+			else if (client_Language.equals("en")) result ="Friday";
+			else result="Không hợp lệ: Xin nhập vi hoặc en";
+				break;
+		case 6:
+			if (client_Language.equals("vi")) result = "Thu Bảy";
+			else if (client_Language.equals("en")) result ="Saturday";
+			else result="Không hợp lệ: Xin nhập vi hoặc en";
+				break;
+		case 7:
+			if (client_Language.equals("vi")) result = "Chu Nhật";
+			else if (client_Language.equals("en")) result ="Sunday";
+			else result="Không hợp lệ: Xin nhập vi hoặc en";
+				break;
+		default:
+			System.out.println("Cú pháp không hợp lệ - Vui lòng nhập từ 1-7");
+			break;
+		}
+		System.out.println(result);	
+	}
+
+}
